@@ -8,7 +8,7 @@ account for:
 - Compute utilization
 - Non-production cost controls
 
-Your goal is to **audit and improve the architecture** using
+The goal is to **audit and improve the architecture** using
 cloud architect judgment — not trial-and-error configuration.
 
 Nothing here is broken from a functionality perspective.
