@@ -1,10 +1,11 @@
-# Root module
-# Separates storage and compute to make cost auditing easier.
-
 module "storage" {
-  source = "./storage"
+  source     = "./storage"
+  project_id = var.project_id
+  region     = var.region
 }
 
 module "compute" {
-  source = "./compute"
+  source     = "./compute"
+  project_id = var.project_id
+  region     = var.region
 }
