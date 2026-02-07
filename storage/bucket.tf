@@ -8,7 +8,6 @@ resource "google_storage_bucket" "reports_bucket" {
   storage_class = "STANDARD"
   uniform_bucket_level_access = true
 
-  # Lifecycle rules (commented in broken state)
   # Uncomment for solution
   # lifecycle_rule {
   #   action { type = "SetStorageClass"; storage_class = "NEARLINE" }
