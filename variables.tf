@@ -1,4 +1,10 @@
 variable "project_id" {
-  description = "Injected by the lab environment"
+  description = "GCP Project ID"
   type        = string
+}
+
+variable "region" {
+  description = "GCP region"
+  type        = string
+  default     = "us-central1"
 }
