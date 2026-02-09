@@ -6,6 +6,7 @@ resource "google_storage_bucket" "reports_bucket" {
   # Initial (broken) state for lab
   storage_class               = "STANDARD"
   uniform_bucket_level_access = true
+}
 
 #########################################################
 # Sample Object – Creates initial file for demonstration
