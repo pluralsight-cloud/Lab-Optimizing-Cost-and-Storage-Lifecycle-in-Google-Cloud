@@ -1,11 +1,10 @@
-resource "random_id" "suffix" {
-  byte_length = 4
-}
-
 resource "google_storage_bucket" "reports_bucket" {
-  name     = "nonprod-reporting-data-${random_id.suffix.hex}"
+  # Stable bucket name (no random regeneration)
+  name     = "nonprod-reporting-data-${var.project_id}"
   location = var.region
-  storage_class = "STANDARD"   # initial state (broken for lab)
+
+  # Initial (broken) state for lab
+  storage_class               = "STANDARD"
   uniform_bucket_level_access = true
 
   #########################################################
